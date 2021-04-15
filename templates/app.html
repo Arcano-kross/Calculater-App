@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h3>Calculator app</h1>
+    </div>
+
+    <div class="container">
+        <form action="/send" method="POST">
+            <label for="Number One">First Number</label>
+            <input type="text" placeholder="First Number" class="u-full-width" name="num1" />
+
+            <label for="Number Two">Second Number</label>
+            <input type="text" placeholder="Second Number" class="u-full-width" name="num2" />
+
+            <label for="Operation">Operation</label>
+            <select class="u-full-width" name="operation">
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select>
+
+            <input type="submit" value="Calculate" id="calc_btn" />
+            <div class="alert">
+                {{ sum }}
+</body>
+
+</html>
